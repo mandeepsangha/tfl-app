@@ -3,9 +3,11 @@ import React from "react";
 const TransportLine = ({ modes }) => {
   return (
     <>
-      <select>
-        <option value="none"> Pick a Line please</option>
-      </select>
+      <select >
+      {modes.map((el, key) => (
+        <option key={key}>{el.modeName} </option>
+      ))}
+    </select>
     </>
   );
 };

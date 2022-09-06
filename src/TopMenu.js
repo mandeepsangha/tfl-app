@@ -47,7 +47,7 @@ const TopMenu = () => {
     <div className="App">
       <header>Transport for London Line Information</header>
       <TransportMode modes={modes} />
-      <TransportLine />
+      <TransportLine modes={modes}/>
       <StartEndLine />
       <div style={{ marginTop: "1rem" }}>SearchBox</div>
       <div style={{ marginTop: "1rem" }}>Search Confirmation</div>
